@@ -4,13 +4,28 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import { IntlProvider } from "react-intl";
+import { IntlProvider, addLocaleData } from "react-intl";
+import localeData from "./../build/locales/data.json";
+import en from "react-intl/locale-data/en";
+import es from "react-intl/locale-data/es";
+
+addLocaleData([...en, ...es]);
+
+const language = 'en'
+
+let messages = localeData.en
+
+if (language === 'es') {
+  messages = localeData.es
+} else {
+  messages = localeData.en
+}
 
 ReactDOM.render(
-  <BrowserRouter>
-    <IntlProvider>
+  <IntlProvider locale={language} messages={messages}>
+    <BrowserRouter>
       <App />
-    </IntlProvider>
-  </BrowserRouter>, 
+    </BrowserRouter>
+  </IntlProvider>,
   document.getElementById('root'));
 registerServiceWorker();

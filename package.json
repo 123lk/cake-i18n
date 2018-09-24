@@ -49,8 +49,9 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "build:langs": "NODE_ENV='production' babel-node scripts/mergeMessages.js",
+    "build": "npm run build:langs && node scripts/build.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -93,5 +94,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
   }
 }

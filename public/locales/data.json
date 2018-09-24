@@ -1,0 +1,10 @@
+{
+  "en": {
+    "Page1.header": "Hello, I am page 1.",
+    "Page2.header": "Hello, I am page 2."
+  },
+  "es": {
+    "Page1.header": "Hola, I am page 1.",
+    "Page2.header": "Hola, I am page 2."
+  }
+}
