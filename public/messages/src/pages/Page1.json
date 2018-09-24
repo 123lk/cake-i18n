@@ -2,5 +2,9 @@
   {
     "id": "Page1.header",
     "defaultMessage": "Hello, I am page 1."
+  },
+  {
+    "id": "Page1.button",
+    "defaultMessage": "Go to page 2"
   }
 ]

@@ -8,10 +8,11 @@ import { IntlProvider, addLocaleData } from "react-intl";
 import localeData from "./../build/locales/data.json";
 import en from "react-intl/locale-data/en";
 import es from "react-intl/locale-data/es";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; 
 
 addLocaleData([...en, ...es]);
 
-const language = 'en'
+const language = 'es'
 
 let messages = localeData.en
 
@@ -24,7 +25,9 @@ if (language === 'es') {
 ReactDOM.render(
   <IntlProvider locale={language} messages={messages}>
     <BrowserRouter>
-      <App />
+      <MuiThemeProvider>
+        <App />
+      </MuiThemeProvider>
     </BrowserRouter>
   </IntlProvider>,
   document.getElementById('root'));

@@ -1,4 +1,6 @@
 {
-  "Page1.header": "Hola, I am page 1.",
-  "Page2.header": "Hola, I am page 2."
+  "Page1.header": "Hola soy la página 1.",
+  "Page2.header": "Hola soy la página 2.",
+  "Page1.button": "Ir a la página 2.",
+  "Page2.button": "Ir a la página 1."
 }
