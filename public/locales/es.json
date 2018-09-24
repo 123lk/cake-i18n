@@ -2,5 +2,10 @@
   "Page1.header": "Hola soy la página 1.",
   "Page2.header": "Hola soy la página 2.",
   "Page1.button": "Ir a la página 2.",
-  "Page2.button": "Ir a la página 1."
+  "Page2.button": "Ir a la página 1.",
+  "Page1.cardHeader": "Spanish",
+  "Page1.cardHeaderSubtitle": "Spanish",
+  "Page1.cardText": "Spanish text",
+  "Page1.cardTitleOverlay": "Spanish card title overlay",
+  "Page1.cardOverlaySubtitle": "Spanish card title subtitle"
 }

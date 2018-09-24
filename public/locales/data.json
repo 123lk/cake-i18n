@@ -2,6 +2,13 @@
   "en": {
     "Page1.header": "Hello, I am page 1.",
     "Page1.button": "Go to page 2",
+    "Page1.cardHeader": "Card header",
+    "Page1.cardHeaderSubtitle": "Card header subtitle",
+    "Page1.cardTitleOverlay": "Card title overlay",
+    "Page1.cardOverlaySubtitle": "Card title subtitle",
+    "Page1.mainCardTitle": "main card title",
+    "Page1.mainCardSubtitle": "main card subtitle",
+    "Page1.cardText": "English text",
     "Page2.header": "Hello, I am page 2.",
     "Page2.button": "Go to page 1"
   },
@@ -9,6 +16,11 @@
     "Page1.header": "Hola soy la página 1.",
     "Page2.header": "Hola soy la página 2.",
     "Page1.button": "Ir a la página 2.",
-    "Page2.button": "Ir a la página 1."
+    "Page2.button": "Ir a la página 1.",
+    "Page1.cardHeader": "Spanish",
+    "Page1.cardHeaderSubtitle": "Spanish",
+    "Page1.cardText": "Spanish text",
+    "Page1.cardTitleOverlay": "Spanish card title overlay",
+    "Page1.cardOverlaySubtitle": "Spanish card title subtitle"
   }
 }

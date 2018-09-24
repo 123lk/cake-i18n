@@ -6,5 +6,33 @@
   {
     "id": "Page1.button",
     "defaultMessage": "Go to page 2"
+  },
+  {
+    "id": "Page1.cardHeader",
+    "defaultMessage": "Card header"
+  },
+  {
+    "id": "Page1.cardHeaderSubtitle",
+    "defaultMessage": "Card header subtitle"
+  },
+  {
+    "id": "Page1.cardTitleOverlay",
+    "defaultMessage": "Card title overlay"
+  },
+  {
+    "id": "Page1.cardOverlaySubtitle",
+    "defaultMessage": "Card title subtitle"
+  },
+  {
+    "id": "Page1.mainCardTitle",
+    "defaultMessage": "main card title"
+  },
+  {
+    "id": "Page1.mainCardSubtitle",
+    "defaultMessage": "main card subtitle"
+  },
+  {
+    "id": "Page1.cardText",
+    "defaultMessage": "English text"
   }
 ]

@@ -12,7 +12,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 addLocaleData([...en, ...es]);
 
-const language = 'es'
+let language = 'en'
 
 let messages = localeData.en
 
@@ -21,6 +21,7 @@ if (language === 'es') {
 } else {
   messages = localeData.en
 }
+
 
 ReactDOM.render(
   <IntlProvider locale={language} messages={messages}>
