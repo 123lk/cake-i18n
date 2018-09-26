@@ -2,6 +2,7 @@
   "en": {
     "Page1.header": "Hello, I am page 1.",
     "Page1.button": "Go to page 2",
+    "Page1.button2": "Click to change language",
     "Page1.cardHeader": "Card header",
     "Page1.cardHeaderSubtitle": "Card header subtitle",
     "Page1.cardTitleOverlay": "Card title overlay",
@@ -21,6 +22,9 @@
     "Page1.cardHeaderSubtitle": "Spanish",
     "Page1.cardText": "Spanish text",
     "Page1.cardTitleOverlay": "Spanish card title overlay",
-    "Page1.cardOverlaySubtitle": "Spanish card title subtitle"
+    "Page1.cardOverlaySubtitle": "Spanish card title subtitle",
+    "Page1.button2": "spanish button 2 text",
+    "Page1.mainCardTitle": "spanish main card title",
+    "Page1.mainCardSubtitle": "spanish main card subtitle"
   }
 }

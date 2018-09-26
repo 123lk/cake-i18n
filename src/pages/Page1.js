@@ -26,7 +26,6 @@ class Page1 extends Component {
   }
 
   render() {
-    console.log(this.props.language);
     return (
       <div>
         <div>
