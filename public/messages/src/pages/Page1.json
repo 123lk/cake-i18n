@@ -8,6 +8,10 @@
     "defaultMessage": "Go to page 2"
   },
   {
+    "id": "Page1.button2",
+    "defaultMessage": "Click to change language"
+  },
+  {
     "id": "Page1.cardHeader",
     "defaultMessage": "Card header"
   },

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import RaisedButton from 'material-ui/RaisedButton';
 import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import { changeLanguage } from '../actions/index.js';
+import { connect } from 'react-redux';
 
 class Page1 extends Component {
 
@@ -9,7 +11,22 @@ class Page1 extends Component {
     this.props.history.push('/page2')
   }
 
+  handleLanguageClick() {
+
+    let language = 'en'
+
+    if(this.props.language === 'en') {
+      language = 'es'
+    } else {
+      language = 'en'
+    }
+
+    this.props.changeLanguage(language)
+
+  }
+
   render() {
+    console.log(this.props.language);
     return (
       <div>
         <div>
@@ -17,6 +34,7 @@ class Page1 extends Component {
             <FormattedMessage id="Page1.header" defaultMessage="Hello, I am page 1." />
           </h3>
           <RaisedButton label={<FormattedMessage id="Page1.button" defaultMessage="Go to page 2" />} primary={true} onClick={this.handleClick.bind(this)} />
+          <RaisedButton label={<FormattedMessage id="Page1.button2" defaultMessage="Click to change language" />} primary={true} onClick={this.handleLanguageClick.bind(this)} style={{marginLeft: 20}}/>
         </div>
         <div>
           <Card style={{height: 500, width: 300, marginLeft: 200}}>
@@ -39,4 +57,13 @@ class Page1 extends Component {
     );
   }
 }
- export default Page1;
+
+const mapStateToProps = state => ({
+  language: state.languageReducer.language
+ })
+
+ const mapDispatchToProps = dispatch => ({
+  changeLanguage: language => dispatch(changeLanguage(language))
+ })
+
+ export default connect(mapStateToProps, mapDispatchToProps)(Page1);
